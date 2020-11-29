@@ -1,0 +1,51 @@
+{%extends 'base.html'%} {% block head %}
+<title>Home</title>
+<link rel="stylesheet" href="../index.css">
+{% endblock %} 
+
+
+
+
+
+
+{% block body %}
+
+
+
+<!-- <hr> -->
+<h1>this is the vo</h1>
+<form action='/posts' method='POST'>
+    Title: <input type="text" name='title' id='title'>
+    <br>
+    Post: <input type="text" name='content' id='content'>
+    <br>
+    Author: <input type="text" name='author' id='author'>
+    <br>
+    <input type="submit" value="Post">
+    <br>
+  
+
+
+</form>
+
+
+</hr>
+ 
+<!-- <h1>Welcome to world of posts</h1>
+{% for post in posts%}
+<h2>{{ post.title }}</h2>
+{% if post.author%}
+<h2>By :{{ post.author }}</h2>
+{%else%}
+<p>Author not available</p>
+{%endif%}
+<p>{{ post.content }}</p>
+
+<a href="/posts/delete/{{post.id}}">
+    Delete
+</a>
+
+<a href="/posts/edit/{{post.id}}">
+    Edit
+</a> -->
+{%endfor%} {% endblock %}
